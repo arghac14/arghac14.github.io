@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x:hidden;
+
+  /* added: */
+  width: 100%; 
+  height: 100%;
+}
+#pic:hover {
+  transition: 0.9s;
+    transform: rotateY(360deg);
+
+}
+#pic1:hover {
+  transition: 0.9s;
+    transform: rotateY(360deg);
+    
+}
+/*#blur:hover{
+  filter: blur(0px);
+}*/
+#particles-js{
+  height: 100vh;
+  min-width: 270px;
+ /* min-width: 443px;*/
+  display: flex;
+  background: linear-gradient(to bottom, rgba(40, 49, 77, 0.8) 30%, rgba(29, 35, 71, 0.8) 50%, rgba(19, 25, 28, 0.8) 80%, rgba(15, 14, 14, .8) 100%), url(https://38.media.tumblr.com/tumblr_m00c3czJkM1qbukryo1_500.gif);
+  background-repeat: repeat;
+  background-size: cover;
+ 
+}
+.myhr{
+
+  height: 2px;
+  min-width: 270px;
+    border: 1px solid rgb(192,192,192);
+     border-radius: 5px;
+
+}
+li{
+   display: inline-block;
+   font-size: 20px;
+}
+
+table,th,tr,td{
+  border: 2px solid rgba(0,0,0,0);
+
+}
+
+@media (max-width: 334px){
+  .sp{
+    font-size: 15px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightblue; 
+  border-radius: 16px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background:  radial-gradient(#353c44, #222931); 
+  border-radius: 10px;
+  border-color: black;
+}
+::-webkit-scrollbar-track-piece{
+  background: grey;
+}
+
+.progress-bar {
+    background-color: #222931;
+    border-radius: 0px 8px 8px 0px;
+    border-color: #222931;
+    color: rgb(192,192,192);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg, #353c44 25%, transparent 25%, transparent 50%, #353c44 50%, #353c44 75%, transparent 75%, transparent);
+    background-size: 2.5rem 2.5rem;
+    color: rgb(192,192,192);
+}
+
+
+
+
+.js-reveal {
+  opacity: 1;
+  transition: opacity .7s ease-in, margin-top .7s ease-out;
+}
+
+.js-reveal--hidden {
+  opacity: 0;
+  margin-top: 3em;
+}
+@media (max-width: 550px){
+  #pic{
+    height: 220px;
+    width: 220px
+  }
+}
+@media (max-width: 400px){
+  #pic{
+
+    height: 208px;
+    width: 208px
+  }
+}
