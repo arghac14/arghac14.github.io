@@ -21,6 +21,7 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css"> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
@@ -35,7 +36,7 @@
  <nav class="navbar navbar-fixed-top navbar-inverse" style="font-size: 18px ;z-index: 1; background: rgba(0,0,0,0.8); filter: blur(0px); border-color: rgba(0,0,0,0);">
         <div class="container-fluid">
           <div class="navbar-head">
-            <button style="background:rgba(0,0,0,0.2);" id="togglemenu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+            <button style="background:rgba(0,0,0,1);" id="togglemenu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -45,16 +46,38 @@
           </div>
           <div class="collapse navbar-collapse" id="mynav">
             <ul class="nav navbar-nav navbar-right" style="font-size: 17px">
-              <li><a href="#home"><i class="fa fa-home "></i> Home</a></li>
-              <li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
-              <li><a href="#projects"><i class="fa fa-file-code-o"></i> Projects</a></li>
-              <li><a href="#education"><i class="fa fa-university"></i> Education</a></li>
-              <li><a href="#certification"><i class="fa fa-address-card-o"></i> Certifications</a></li>
-              <li><a href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
+              <li><a href="#home" id="u"><i class="fa fa-home "></i> Home</a></li>
+              <li><a href="#skills"  id="u"><i class="fa fa-code"></i> Skills</a></li>
+              <li><a href="#projects"  id="u"><i class="fa fa-file-code-o"></i> Projects</a></li>
+              <li><a href="#education"  id="u"><i class="fa fa-university"></i> Education</a></li>
+              <li><a href="#certification"  id="u"><i class="fa fa-address-card-o"></i> Certifications</a></li>
+              <li><a href="#contact"  id="u"><i class="fa fa-phone"></i> Contact</a></li>
             </ul>
           </div>
         </div>
   </nav>
+<!-- 
+  <div class="luxbar luxbar-static">
+    <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
+    <div class="luxbar-menu luxbar-menu-right luxbar-menu-dark">
+        <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+                <a class="luxbar-brand" href="#">Brand</a>
+                <label class="luxbar-hamburger luxbar-hamburger-doublespin"
+                        for="luxbar-checkbox"> <span></span> </label>
+            </li>
+            <li class="luxbar-item active"><a href="#">Home</a></li>
+            <li class="luxbar-item dropdown"><a href="#">Users</a>
+                <ul>
+                    <li class="luxbar-item" ><a href="#">Max</a></li>
+                    <li class="luxbar-item" ><a href="#">Edgar</a></li>
+                    <li class="luxbar-item" ><a href="#">John</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+
+
     <div class="p">
         <div id="home" style=" font-family: 'Ubuntu', serif;
   color:rgb(192,192,192); ">
@@ -65,17 +88,17 @@
   transform: translate(-50%,-50%);text-align: center;">
 
 <br><br><br><br>
-
-      <img id="pi" src="images/img.jpeg"  width="245px" height="245px" style="border-radius: 50%">
+        <div class="hover">
+      <figure><img id="dp" src="images/img.jpeg" style="border-radius:50%; height: 235px;width: 235px;box-shadow: 2px 3px rgba(0,0,0,0.3);"></figure></div>
       <h1 >Arghadip Chakraborty</h1><hr class="myhr"><h3>Full Stack Web Developer | ML Enthusiast</h3><br>
 
         <div id="blur" style="filter: blur(1px); display: inline-block;">
           
           <ul class="text-center" style="position: relative;left: -10%">
-          <li><a href="https://www.facebook.com/arghadip.chakraborty.568"><i id="pic1" class="fa fa-facebook fa-1x mx-2"></i>&nbsp&nbsp&nbsp</a></li>
-          <li><a href="https://www.instagram.com/argha_c14"><i id="pic1" class="fa fa-instagram fa-1x mx-2"></i>&nbsp&nbsp&nbsp</a></li>
-          <li><a href="https://github.com/arghac14"><i id="pic1" class="fa fa-github fa-1x mx-2"></i>&nbsp&nbsp&nbsp</a></li>
-          <li><a href="https://www.linkedin.com/in/arghadip-chakraborty-5064a7170"><i id="pic1" class="fa fa-linkedin fa-1x mx-2"></i></a></li>
+          <li><a href="https://www.facebook.com/arghadip.chakraborty.568"  style="text-decoration-line: none"><i id="pic1" class="fa fa-facebook fa-1x mx-2"></i>&nbsp&nbsp&nbsp</a></li>
+          <li><a href="https://www.instagram.com/argha_c14" style="text-decoration-line: none"><i id="pic1" class="fa fa-instagram fa-1x mx-2"></i>&nbsp&nbsp&nbsp</a></li>
+          <li><a href="https://github.com/arghac14" style="text-decoration-line: none"><i id="pic1" class="fa fa-github fa-1x mx-2"></i>&nbsp&nbsp&nbsp</a></li>
+          <li><a href="https://www.linkedin.com/in/arghadip-chakraborty-5064a7170" style="text-decoration-line: none"><i id="pic1" class="fa fa-linkedin fa-1x mx-2"></i></a></li>
         </ul>
     </div>
   </div>
@@ -162,7 +185,7 @@
   aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:65%">
     Arduino 65%
   </div>
-</div><br>
+</div>
 
         <br>
     
@@ -191,7 +214,7 @@
              <br><br><br>
               <h2>Visit my Github profile..</h2><br>
               <a href="https://github.com/arghac14"><i id="pic1" class="fa fa-github fa-5x" style="font-size: 170px" aria-hidden=true></i></a><br>
-              <a href="https://github.com/arghac14"><h1>arghac14</h1></a><br><br>
+              <a href="https://github.com/arghac14" style="text-decoration-line: none"><h1>arghac14</h1></a><br><br>
              
              </div>
            </div>   
@@ -267,6 +290,10 @@
     </div>
 
     <div class="item">
+      <img src="images/pics/8.PNG" style="width: 100%; height: 450px;">
+    </div>
+
+    <div class="item">
       <img src="images/pics/4.PNG" style="height: 450px;width: 100%">
     </div>
 
@@ -280,11 +307,15 @@
     <div class="item">
       <img src="images/pics/3.PNG" style="height: 450px;width: 100%">
     </div>
+    <div class="item">
+      <img src="images/pics/7.jpg" style="width: 100%; height: 450px;">
+    </div>
 
     <div class="item">
       <img src="images/pics/6.PNG" style="height: 450px;width: 100%">
     </div>
-
+  
+ 
 
   </div>
 
@@ -310,11 +341,11 @@
 
              <div class="col-md-12" style="text-align:left;; background: rgba(0,0,0,0.1);height: auto;min-width:270px;">
                 <br><br>
-              <table class="table text-center" style="font-size: 20px"> 
+              <table class="table text-center" style="font-size: 18px"> 
                   
              <tr>
               <th class="text-center"><i class="fa fa-map-marker" aria-hidden="true"></i> Address :</th>
-              <td>Garia St. Road, Kolkata-700039</td>
+              <td>Garia St. Road, Kolkata-700084</td>
             </tr>
             <tr>
               <th class="text-center"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email :</th>
@@ -335,10 +366,10 @@
              
              <div ><h2 style="text-align: center;padding-left: 31px"> Get in touch</h2><br>
              <ul class="text-center">
-          <li><a href="https://www.facebook.com/arghadip.chakraborty.568"><i id="pic1" class="fa fa-facebook fa-2x mx-3"></i>&nbsp&nbsp&nbsp</a></li>
-          <li><a href="https://www.instagram.com/argha_c14"><i id="pic1" class="fa fa-instagram fa-2x mx-3"></i>&nbsp&nbsp&nbsp</a></li>
-          <li><a href="https://github.com/arghac14"><i id="pic1" class="fa fa-github fa-2x mx-3"></i>&nbsp&nbsp&nbsp</a></li>
-          <li><a href="https://www.linkedin.com/in/arghadip-chakraborty-5064a7170"><i id="pic1" class="fa fa-linkedin fa-2x mx-3"></i></a></li>
+          <li><a href="https://www.facebook.com/arghadip.chakraborty.568" style="text-decoration-line: none"><i id="pic1" class="fa fa-facebook fa-2x mx-3"></i>&nbsp&nbsp&nbsp</a></li>
+          <li><a href="https://www.instagram.com/argha_c14" style="text-decoration-line: none"><i id="pic1" class="fa fa-instagram fa-2x mx-3"></i>&nbsp&nbsp&nbsp</a></li>
+          <li><a href="https://github.com/arghac14" style="text-decoration-line: none"><i id="pic1" class="fa fa-github fa-2x mx-3"></i>&nbsp&nbsp&nbsp</a></li>
+          <li><a href="https://www.linkedin.com/in/arghadip-chakraborty-5064a7170" style="text-decoration-line: none"><i id="pic1" class="fa fa-linkedin fa-2x mx-3"></i></a></li>
         </ul>
        </div>
  
