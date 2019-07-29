@@ -1,7 +1,7 @@
 $(document).ready(function(){
-// 	$("#resume").click(function(){
-// 		alert("Temporarily unavailable :(");
-// 	});
+	$("#resume").click(function(){
+// 		alert("Temporarily unavailable!");
+	});
 	$("#blur").mouseenter(function(){
 		$("#blur").css("filter","blur(0px)");
 	});
