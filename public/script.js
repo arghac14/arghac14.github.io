@@ -12,6 +12,10 @@ $(document).ready(function(){
 		$("#skillmeter").slideToggle("slow");
 	
 	  });
+	  $("#projectbutton").click(function(){
+		$("#projectlist").slideToggle("slow");
+	
+	  });
 
 	
 	
