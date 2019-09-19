@@ -16,6 +16,8 @@ $(document).ready(function(){
 		$("#projectlist").slideToggle("slow");
 	
 	  });
+	  $('.preloader').delay(3000).fadeOut('slow');
+	  $('.rest').delay(2990).fadeIn('fast');
 
 	
 	
