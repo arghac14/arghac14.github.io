@@ -10,7 +10,7 @@ body{
 }
 #u:hover {
   transition: .9s;
-  transform: rotateX(360deg);
+  /*transform: rotateX(360deg);*/
   font-size: 27px
 }
 
