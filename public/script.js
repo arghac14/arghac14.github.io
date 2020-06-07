@@ -16,9 +16,15 @@ $(document).ready(function(){
 		$("#projectlist").slideToggle("slow");
 	
 	  });
+	  $("#blogbutton").click(function(){
+		$("#bloglist").slideToggle("slow");
+	
+	  });
+	  $(".hamburger").click(function(){
+		$(this).toggleClass("is-active");
+	  });
 	  $('.preloader').delay(3000).fadeOut('slow');
 	  $('.rest').delay(2990).fadeIn('fast');
 
-	
 	
 });
