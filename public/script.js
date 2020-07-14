@@ -23,8 +23,11 @@ $(document).ready(function(){
 	  $(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
 	  });
-	  $('.preloader').delay(3000).fadeOut('slow');
-	  $('.rest').delay(2990).fadeIn('fast');
+	  $('.preloader').delay(1000).fadeOut('slow');
+	  $('.rest').delay(990).fadeIn('fast');
 
+
+
+	  
 	
 });
